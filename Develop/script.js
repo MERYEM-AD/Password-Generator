@@ -170,6 +170,8 @@ Lowercase_ch(q5);
 
 
   var password = generatePassword(Number_char);
+  /**Display the password in an alert  */
+    //window.alert("Password is :"+password); 
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
