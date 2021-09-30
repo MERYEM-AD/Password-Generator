@@ -9,6 +9,7 @@ let userNumber ;
 let randomList=[];
 const generateCode=1;
 
+
 /***** getNumber() function tests if the length of the password entered by the USER is at least 8 characters and no more than 128 characters 
  * IF TRUE the function will return the length number ;
  * IF NOT the function will re-ask the USER to re-enter the right number which is at least 8 and no more than 128 ****** */
@@ -68,8 +69,50 @@ function Special_ch(optionChar) {
                   }
 
 
+/***** Uppercase_ch(x) function tests if the the User confirm that the Uppercase charactere as part of password
+ * IF TRUE  then apply a random function on the alphabetUppercase charactere array and add it into a randoList collection
+ * IF NOT Skip  */
+
+ function Uppercase_ch(optionChar) {
+
+            if(optionChar){
+
+                        index = Math.floor(Math.random() *  alphabetUppercase_char.length);
+                        randomList.push( alphabetUppercase_char[index]) ;
+                      }
+                    }
 
 
+
+/***** Lowercase_ch(x) function tests if the the User confirm that the Lowercase charactere as part of password but we have 3 cases :
+ *  1)-IF optionChar is TRUE and the randomList lenght not equal 0 (don't empty) then apply a random function on the alphabetUppercase charactere 
+ array and add it into a randoList collection;
+
+ *  2)- IF optionChar is TRUE and the randomList lenght equal 0 (Empty) OR optionChar is FALSE and the randomList is Empty then 
+ apply a random function on the alphabetLowercase charactere array and add it into a randoList collection;
+ 
+ *  3)- ELSE SKIP (don't do NOTHING)*/
+
+ 
+ function Lowercase_ch(optionChar) {
+
+            if((optionChar) && ((randomList.length)!== 0) ){   // T + T = T
+              
+                        index = Math.floor(Math.random() *  alphabetLowercase_char.length);
+                        randomList.push(alphabetLowercase_char[index]);
+              }
+            else if(((optionChar) && ((randomList.length)== 0)) || ((!optionChar) && ((randomList.length)== 0))  ){ //T+F=F OR F+F=F
+                        index = Math.floor(Math.random() *  alphabetLowercase_char.length);
+                        randomList.unshift(alphabetLowercase_char[index]) ;
+              }
+            else{ 
+
+                    //Skip and do Nothing
+            }
+
+
+              
+}
 
 
 
