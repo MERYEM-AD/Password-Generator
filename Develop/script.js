@@ -53,10 +53,19 @@ function Special_ch(optionChar) {
                   }
 
 
+/***** Numeric_ch(x) function tests if the the User confirm that the Numeric charactere as part of password
+ * IF TRUE  then apply a random function on the numeric charactere array and add it into a randoList collection
+ * IF NOT Skip  */
 
 
+ function Numeric_ch(optionChar) {
 
+          if(optionChar){
 
+                      index = Math.floor(Math.random() * numeric_char.length);
+                      randomList.push(numeric_char[index]) ;
+                    }
+                  }
 
 
 
