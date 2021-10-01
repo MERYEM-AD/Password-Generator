@@ -21,22 +21,22 @@ Creation of a repository in GitHub:
 
 # Application's Screenshoot:
 * The program asks the User the enter the password length  
-![1](App_Screenshoot/1.png)
+![1](App_Screenshoot/1.PNG)
 
 * The program re-ask the user the re-enter another password length at least 8  characters and no more than 128 characters 
-![2](App_Screenshoot/2.png)
+![2](App_Screenshoot/2.PNG)
 
 * The user taps a validate password length
-![3](App_Screenshoot/3.png) 
+![3](App_Screenshoot/3.PNG) 
 
 * the program ask the user to confirm the type of character that the password includes;
-![4](App_Screenshoot/4.png) 
-![5](App_Screenshoot/5.png) 
-![6](App_Screenshoot/6.png) 
-![7](App_Screenshoot/7.png) 
+![4](App_Screenshoot/4.PNG) 
+![5](App_Screenshoot/5.PNG) 
+![6](App_Screenshoot/6.PNG) 
+![7](App_Screenshoot/7.PNG) 
 
 * the program generate the password and display it in the textarea element of the HTML file
-![Password](App_Screenshoot/Password.png) 
+![Password](App_Screenshoot/Password.PNG) 
 
 # Links :
 
