@@ -20,20 +20,19 @@ function getNumber() {
 
           for(let i=0;i<generateCode;i++){ 
       
-            userNumber = window.prompt("How many character would you like your password contains : ");
+            userNumber = window.prompt("How many characters would you like your password contains : ");
 
                     if((userNumber>=8 && userNumber<=128)){ 
 
-                      window.alert("Thank you you have entred :"+userNumber);
+                      window.alert("Thank you, Your Password length is : "+userNumber);
                       return (userNumber);
                               
                     }
                     
                     else {
 
-
-                              window.alert("Sorry, you have entred "+userNumber+" Please enter a number at least 8 and 128");
-                              i--;
+                      window.alert("Sorry, you have entered "+userNumber+" ,Please enter a number at least 8 and no more than 128 ");
+                      i--;
                             
                           }
  
@@ -157,10 +156,10 @@ function writePassword() {
 
 
 let Number_char =getNumber();
-q2= window.confirm("Do you want Special charactere : ");
-q3=window.confirm("Do you want numeric charactere : ");
-q4=window.confirm("Do you want UpperCase charactere : ");
-q5=window.confirm("Do you want Lowercase charactere : ");
+q2= window.confirm("Do you want Special characters: !,#,$,%,&,',...");
+q3=window.confirm("Do you want numeric characters : 1,2,3,... ");
+q4=window.confirm("Do you want UpperCase characters : A,B,C,...");
+q5=window.confirm("Do you want Lowercase characters : a,b,c,...");
 
 
 Special_ch(q2);
